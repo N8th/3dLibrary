@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let previewEnabled = false;
   const backgroundOverlay = document.getElementById("background-overlay");
 
-  fetch("/data.json")
+  fetch("./data.json")
     .then((response) => response.json())
     .then((data) => {
       const gridContainer = document.getElementById("grid-container");
