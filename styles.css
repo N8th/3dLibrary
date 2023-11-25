@@ -1,41 +1,79 @@
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+body,
+html {
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(calc(100% / 5 - 10px), 1fr));
-  gap: 10px;
-  padding: 20px;
-  max-width: 1200px; /* Maximum width of the grid */
-  margin: auto; /* Center the grid horizontally */
-}
-.model-viewer {
-  position: relative;
-  padding-bottom: 100%; /* Maintain aspect ratio of 1:1 */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-model-viewer {
-  position: absolute;
-  width: 100%;
   height: 100%;
+  overflow: hidden; /* Prevent scrolling if overlay is larger than the view */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.25
+  ); /* Light grey background for the page */
+  font-family: "Arial", sans-serif; /* Use a nice, readable font */
+}
+
+#background-overlay {
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+  z-index: -1; /* Start behind the content */
+  transition: background-image 0.5s ease; /* Smooth transition for background changes */
+
+  background-color: rgba(255, 255, 255, 0.25);
 }
-@media screen and (max-width: 1200px) {
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-  }
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(150px, 1fr)
+  ); /* Create smaller cells with a minimum width of 150px */
+  gap: 20px; /* Wider gap between cells */
+  padding: 20px; /* Padding around the entire grid */
+  box-sizing: border-box; /* Include padding in the width calculations */
 }
-@media screen and (max-width: 600px) {
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-  }
+
+.grid-item {
+  text-align: center;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8); /* Opaque white backgrounds for cells */
+  border: 1px solid #ddd; /* Light grey border for the cells */
+  padding: 10px; /* Padding between the image and cell border */
+  border-radius: 8px; /* Rounded corners for the cells */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s ease; /* Animation for click effect */
+}
+
+.grid-item:hover {
+  transform: translateY(-5px); /* Slight raise effect on hover */
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px; /* Rounded corners for the images */
+  margin-bottom: 8px; /* Space between the image and the text */
+}
+
+#preview-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 99999;
+  padding: 10px 15px;
+  cursor: pointer;
+  background: #ffffff; /* Solid white background for the button */
+  border: 1px solid #ddd; /* Light grey border for the button */
+  border-radius: 20px; /* Rounded corners for the button */
+  font-size: 16px; /* Larger font size for better readability */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for the button */
+  transition: background-color 0.3s ease; /* Transition for button background color */
+}
+
+#preview-toggle:hover {
+  background-color: #e8e8e8; /* Slightly darker background on hover */
 }
