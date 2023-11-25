@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D Model Viewer</title>
+    <style>
+      /* Add your styles here */
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      #modelViewer {
+        width: 100%;
+        height: 500px; /* Adjust as needed */
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: white;
+      }
+    </style>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@google/model-viewer"
+    ></script>
+  </head>
+  <body>
+    <select id="modelSelector">
+      <option value="aidan.glb">Aidan</option>
+      <option value="gnome.glb">Gnome</option>
+      <option value="head.glb">Head</option>
+      <option value="icecream.glb">Ice Cream</option>
+      <option value="jason.glb">Jason</option>
+      <option value="kennedy.glb">Kennedy</option>
+      <option value="templeStatue.glb">Temple Statue</option>
+      <option value="thomas.glb">Thomas</option>
+      <option value="woman.glb">Woman</option>
+    </select>
+    <button id="loadModel">Load Model</button>
+    <model-viewer id="modelViewer" camera-controls></model-viewer>
 
+    <script>
+      document
+        .getElementById("loadModel")
+        .addEventListener("click", function () {
+          var selectedModel = document.getElementById("modelSelector").value;
+          fetch("/models.json")
+            .then((response) => response.json())
+            .then((data) => {
+              var modelData = data.find(
+                (model) => model.fileName === selectedModel
+              );
+              var modelViewer = document.getElementById("modelViewer");
+              modelViewer.setAttribute("src", "/objects/" + modelData.fileName); // Update the path as needed
+            })
+            .catch((error) => {
+              console.error("Error fetching the JSON data: ", error);
+            });
+        });
+    </script>
+  </body>
+</html>

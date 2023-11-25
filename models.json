@@ -1,0 +1,47 @@
+[
+  {
+    "fileName": "aidan.glb",
+    "title": "3D Model of Aidan",
+    "description": "A detailed model of Aidan."
+  },
+  {
+    "fileName": "gnome.glb",
+    "title": "3D Model of Gnome",
+    "description": "A quirky gnome model."
+  },
+  {
+    "fileName": "head.glb",
+    "title": "3D Model of Head",
+    "description": "A sculpted head model."
+  },
+  {
+    "fileName": "icecream.glb",
+    "title": "3D Model of Ice Cream",
+    "description": "A delicious ice cream model."
+  },
+  {
+    "fileName": "jason.glb",
+    "title": "3D Model of Jason",
+    "description": "A model representing Jason."
+  },
+  {
+    "fileName": "kennedy.glb",
+    "title": "3D Model of Kennedy",
+    "description": "A detailed model of Kennedy."
+  },
+  {
+    "fileName": "templeStatue.glb",
+    "title": "3D Model of Temple Statue",
+    "description": "An ancient temple statue model."
+  },
+  {
+    "fileName": "thomas.glb",
+    "title": "3D Model of Thomas",
+    "description": "A model of Thomas."
+  },
+  {
+    "fileName": "woman.glb",
+    "title": "3D Model of Woman",
+    "description": "A model depicting a woman."
+  }
+]
