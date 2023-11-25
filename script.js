@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
       data.forEach((item) => {
         const div = document.createElement("div");
         div.className = "grid-item";
-        div.innerHTML = `<img src="/textures/${item.image}" alt="${item.name}"><p>${item.name}</p>`;
+        div.innerHTML = `<img src="./textures/${item.image}" alt="${item.name}"><p>${item.name}</p>`;
         gridContainer.appendChild(div);
 
         div.addEventListener("click", function () {
-          backgroundOverlay.style.backgroundImage = `url('./textures/${item.image}')`;
+          backgroundOverlay.style.backgroundImage = `url('/textures/${item.image}')`;
           backgroundOverlay.style.backgroundRepeat = "repeat";
         });
       });
