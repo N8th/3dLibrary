@@ -44,7 +44,7 @@
         .getElementById("loadModel")
         .addEventListener("click", function () {
           var selectedModel = document.getElementById("modelSelector").value;
-          fetch("/models.json")
+          fetch("./models.json")
             .then((response) => response.json())
             .then((data) => {
               var modelData = data.find(
