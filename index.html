@@ -44,14 +44,17 @@
         .getElementById("loadModel")
         .addEventListener("click", function () {
           var selectedModel = document.getElementById("modelSelector").value;
-          fetch("/models.json")
+          fetch("./models.json")
             .then((response) => response.json())
             .then((data) => {
               var modelData = data.find(
                 (model) => model.fileName === selectedModel
               );
               var modelViewer = document.getElementById("modelViewer");
-              modelViewer.setAttribute("src", "/objects/" + modelData.fileName); // Update the path as needed
+              modelViewer.setAttribute(
+                "src",
+                "./objects/" + modelData.fileName
+              ); // Update the path as needed
             })
             .catch((error) => {
               console.error("Error fetching the JSON data: ", error);
