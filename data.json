@@ -24,6 +24,16 @@
   { "image": "blocky.jpg", "name": "blocky" },
   { "image": "softMinecraftHill.jpg", "name": "Soft Minecraft Hill" },
   { "image": "neonSands.jpg", "name": "Neon Sands" },
+  { "image": "gummyWorms.jpg", "name": "Gummy Worms" },
+  { "image": "jellyBeans.jpg", "name": "Jelly Beans" },
+  { "image": "featherWhite.jpg", "name": "Feather White" },
+  { "image": "faceBody.jpg", "name": "Face Body" },
+  { "image": "faceClose.jpg", "name": "Face Close" },
+  { "image": "stoneFace.jpg", "name": "Stone Face" },
+  { "image": "riverRocks.jpg", "name": "River Rocks" },
+  { "image": "coloredRocks.jpg", "name": "Colored Rocks" },
+  { "image": "stackedRocks.jpg", "name": "Stacked Rocks" },
+  { "image": "error.jpg", "name": "error" },
   { "image": "error.jpg", "name": "error" },
   { "image": "error.jpg", "name": "error" }
 ]
