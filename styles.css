@@ -59,12 +59,26 @@ html {
   margin-bottom: 8px; /* Space between the image and the text */
 }
 
+.floatingBar {
+  display: flex;
+  justify-content: center; /* Horizontally center the button */
+  align-items: center; /* Vertically center the button */
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 255, 255, 0.25);
+  width: 100vw;
+  height: 90px;
+  line-height: 100%;
+  text-align: center;
+  z-index: 99998;
+}
+
 #preview-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
+  /* position: fixed; */
+
   z-index: 99999;
   padding: 10px 15px;
+  margin: 10px auto;
   cursor: pointer;
   background: #ffffff; /* Solid white background for the button */
   border: 1px solid #ddd; /* Light grey border for the button */
@@ -72,8 +86,19 @@ html {
   font-size: 16px; /* Larger font size for better readability */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for the button */
   transition: background-color 0.3s ease; /* Transition for button background color */
+  transition: opacity 1s ease; /* Transition for button background color */
+}
+.previewIsOn {
+  opacity: 0.5;
 }
 
 #preview-toggle:hover {
   background-color: #e8e8e8; /* Slightly darker background on hover */
+}
+.pushbar {
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(0, 255, 255, 0);
+  position: relative;
+  width: 100vw;
+  height: 100px;
 }
