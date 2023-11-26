@@ -7,5 +7,7 @@
   { "image": "8bitTreesTexture.jpg", "name": "Dense Pixel Forest Canopy" },
   { "image": "8bitIslands.jpg", "name": "Digital Archipelago Oasis" },
   { "image": "8bitIslandsBlue.jpg", "name": "Aqua Pixelated Isles" },
-  { "image": "8bitSandIslands.jpg", "name": "Sandy Pixel Beachfronts" }
+  { "image": "8bitSandIslands.jpg", "name": "Sandy Pixel Beachfronts" },
+  { "image": "hotdogs.jpg", "name": "hotdogs" },
+  { "image": "beans.jpg", "name": "beans" }
 ]
