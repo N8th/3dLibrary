@@ -8,6 +8,11 @@
   { "image": "8bitIslands.jpg", "name": "Digital Archipelago Oasis" },
   { "image": "8bitIslandsBlue.jpg", "name": "Aqua Pixelated Isles" },
   { "image": "8bitSandIslands.jpg", "name": "Sandy Pixel Beachfronts" },
+  { "image": "spiderwebs.jpg", "name": "spiderwebs" },
   { "image": "hotdogs.jpg", "name": "hotdogs" },
-  { "image": "beans.jpg", "name": "beans" }
+  { "image": "beans.jpg", "name": "beans" },
+  { "image": "error.jpg", "name": "error" },
+  { "image": "error.jpg", "name": "error" },
+  { "image": "error.jpg", "name": "error" },
+  { "image": "error.jpg", "name": "error" }
 ]
