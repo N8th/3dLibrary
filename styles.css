@@ -2,7 +2,7 @@ body,
 html {
   margin: 0;
   height: 100%;
-  overflow: hidden; /* Prevent scrolling if overlay is larger than the view */
+  overflow: hidden;
   background-color: rgba(
     255,
     255,
