@@ -12,8 +12,41 @@
     <!-- Overlay for background -->
     <div id="grid-container"></div>
     <div class="floatingBar">
+      <div class="opacity-slider-container">
+        <label for="opacity-slider">Background Opacity:</label>
+        <button id="opacity-decrease">-</button>
+        <input
+          type="range"
+          id="opacity-slider"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0.25"
+        />
+        <button id="opacity-increase">+</button>
+        <span id="opacity-value">0.25</span>
+      </div>
       <button id="preview-toggle">Preview</button>
+
+      <!-- Background Size Slider -->
+      <div class="background-size-slider-container">
+        <label for="background-size-slider">Background Size:</label>
+        <button id="background-size-decrease">-</button>
+        <input
+          type="range"
+          id="background-size-slider"
+          min="1"
+          max="100"
+          step="1"
+          value="50"
+        />
+        <button id="background-size-increase">+</button>
+        <span id="background-size-value">50%</span>
+      </div>
     </div>
+
+    <!-- Opacity Slider -->
+
     <script src="./script.js"></script>
   </body>
 </html>
